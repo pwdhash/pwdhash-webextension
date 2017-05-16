@@ -1,0 +1,26 @@
+{
+  "pwdkeywarn": {
+    "message": "PwdHash could not find a password field on this page.\nIt is possible, though unlikely, that the site trying to steal your password.\nDo not enter your PwdHash password into this page.",
+	"description": "Warning text if no password field was found"
+  },
+
+  "pwdprefixwarn": {
+	"message": "You typed the PwdHash password prefix, but you are not currently in a password field that starts with the password prefix.\nIt is possible, though unlikely, that the site trying to steal your password.\nDo not enter your PwdHash password into this page.",
+	"description": "Warning text if no focus on password field"
+  },
+
+  "trustedeventwarn": {
+	"message": "JavaScript on this page may be interfering with your ability to enter a password.\nAs a precaution, the password field has been cleared.\nIf the problem persists, you might not be able to use PwdHash on this page.",
+	"description": "Warning text if webpage cannot be trusted"
+  },
+
+  "longpasswordwarn": {
+	"message": "Your password is too long to protect.",
+	"description": "Warning text if entered password is too long"
+  },
+
+  "shortpasswordwarn": {
+    "message": "Your password is too short to protect.",
+	"description": "Warning text of entered password is too short"
+  }
+}

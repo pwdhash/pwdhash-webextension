@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 2,
+  "name": "Pwdhash",
+  "version": "2.0",
+  "default_locale": "en",
+
+  "description": "Automatically generates per-site passwords if you prefix your password with @@ or F2.",
+
+  "icons": {
+    "48": "icons/pwdhash-48.png",
+    "96": "icons/pwdhash-96.png"
+  },
+
+  "author": "Stanford University",
+  "homepage_url": "https://www.pwdhash.com",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/md5.js",
+             "content/domain-extractor.js",
+             "content/hashed-password.js",
+             "content/stanford-pwdhash.js"]
+    }
+  ]
+
+}
