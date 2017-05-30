@@ -7,6 +7,13 @@
 
   "description": "Automatically generates per-site passwords if you prefix your password with @@ or F2.",
 
+  "applications": {
+    "gecko": {
+      "id": "{bb8d77b0-a845-4249-a205-ef7395587b69}",
+      "strict_min_version": "42.0"
+    }
+  },
+
   "icons": {
     "48": "icons/pwdhash-48.png",
     "96": "icons/pwdhash-96.png"
