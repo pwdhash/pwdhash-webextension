@@ -1,0 +1,26 @@
+{
+  "pwdkeywarn": {
+    "message": "PwdHash konnte kein Passwortfeld auf dieser Seite finden.\nEs ist möglich, wenn auch unwahrscheinlich, dass jemand versucht dein Passwort zu stehlen.\nGib dein PwdHash-Passwort nicht auf dieser Seite ein.",
+	"description": "Warnung wenn kein Passwortfeld gefunden werden konnte"
+  },
+
+  "pwdprefixwarn": {
+	"message": "Du hast den PwdHash-Prefix eingegeben, bist aber derzeit nicht in einem Passwortfeld, dass mit dem Prefix anfängt.\nEs ist möglich, wenn auch unwahrscheinlich, dass jemand versucht dein Passwort zu stehlen.\nGib dein PwdHash-Passwort nicht auf dieser Seite ein.",
+	"description": "Warnung wenn Fokus nicht auf dem Passwortfeld"
+  },
+
+  "trustedeventwarn": {
+	"message": "Das JavaScript auf dieser Seite könnte die Passworteingabe auf dieser Seite behindern.\nAls Vorsichtsmaßnahme wurde das Passwortfeld geleert.\nSollte das Problem weiterbestehen, kannst du PwdHash auf dieser Seite vermutlich nicht benutzen.",
+	"description": "Warnung wenn der Webseite nicht getraut werden kann"
+  },
+
+  "longpasswordwarn": {
+	"message": "Dein Passwort ist zu lang, um es zu schützen.",
+	"description": "Warnung wenn eingegebenes Passwort zu lang ist"
+  },
+
+  "shortpasswordwarn": {
+    "message": "Dein Passwort ist zu kurz, um es zu schützen.",
+	"description": "Warnung wenn eingegebenes Passwort zu kurz ist"
+  }
+}
