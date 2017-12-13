@@ -192,6 +192,7 @@ function SPH_PasswordProtector(field, monitor) {
   this.nextAvail = this.firstAvail;
   this.field = field;
   this.field.setAttribute("secure","yes");
+  this.field.setAttribute("style","background-color:yellow;");
   window.addEventListener("keydown", this, true);
   window.addEventListener("keyup", this, true);
   window.addEventListener("keypress", this, true);
@@ -207,6 +208,7 @@ function SPH_PasswordProtector(field, monitor) {
     window.removeEventListener("blur", this, true);
     window.removeEventListener("focus", this, true);
     window.removeEventListener("submit", this, true);
+	this.field.setAttribute("style","background-color:white;");
     monitor.protector = null;
   }
 }
