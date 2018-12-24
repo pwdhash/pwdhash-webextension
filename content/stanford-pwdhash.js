@@ -46,14 +46,14 @@ var SPH_debug = true;
  */
 function SPH_dump(msg) {
   if (SPH_debug) {
-	console.log("pwdhash: " + msg);
+    console.log("pwdhash: " + msg);
   }
 }
 
 //////////////////////////////////////////////////////////////////////////////
 // Constants
 
-const SPH_kPasswordKey = "DOM_VK_F2";
+const SPH_kPasswordKey = "F2";
 const SPH_kPasswordPrefix = "@@";
 const SPH_kMinimumPasswordSize = 5;  // Our defense against focus stealing
 
@@ -80,7 +80,7 @@ SPH_PasswordKeyMonitor.prototype = {
    handleEvent: function(evt) {
 
      // Detect Password Key
-     if (evt.keyCode == evt[SPH_kPasswordKey]) { 
+     if (evt.key == SPH_kPasswordKey) { 
        evt.stopPropagation();   // Don't let user JavaScript see this event
        evt.preventDefault();    // Do not let the character hit the page
        if (evt.type == "keydown") {
@@ -91,11 +91,12 @@ SPH_PasswordKeyMonitor.prototype = {
 
      // Detect Password Prefix
      if (evt.type == "keypress") {
-       var lastChar = String.fromCharCode(evt.charCode);
+       var lastChar = evt.key;
        this.keystream.push(lastChar);
 
-       if (this.keystream.length > SPH_kPasswordPrefix.length)
+       if (this.keystream.length > SPH_kPasswordPrefix.length) {
          this.keystream.shift();
+       }
  
        if (!this.protector && 
            this.keystream.join('') == SPH_kPasswordPrefix) {
