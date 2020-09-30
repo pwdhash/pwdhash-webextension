@@ -2,7 +2,7 @@
 
 PwdHash webextension for firefox
 
-## description
+## Description
 
 Automatically generates per-site passwords if you prefix your password with @@ or press F2 beforehand.
 Prevents JavaScript from reading your password as it is typed.
@@ -11,8 +11,8 @@ matches b.example.co.uk, but a.co.uk and b.co.uk are different.
 
 Hashed passwords can also be generated at https://www.pwdhash.com/
 
-## roadmap
+## Roadmap
 
-* add option to highlight password field
-* add PBKDF2-SHA512 as alternative to MD5
-* add user salt option
+* Add option to highlight password field
+* Add PBKDF2-SHA512 as alternative to MD5
+* Add user salt option
