@@ -1,6 +1,6 @@
 # pwdhash-webextension
 
-Welcome to PwdHash webextension for firefox
+Welcome to PwdHash webextension for firefox(pc/phone)
 
 ## description
 
