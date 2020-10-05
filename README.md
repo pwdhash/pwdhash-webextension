@@ -1,6 +1,6 @@
 # pwdhash-webextension
 
-PwdHash webextension for firefox
+Welcome to PwdHash webextension for firefox(pc/phone)
 
 ## description
 
@@ -16,3 +16,6 @@ Hashed passwords can also be generated at https://www.pwdhash.com/
 * add option to highlight password field
 * add PBKDF2-SHA512 as alternative to MD5
 * add user salt option
+
+
+Go Check It Out
